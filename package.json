@@ -1,0 +1,50 @@
+{
+  "name": "snippet",
+  "version": "1.0.0",
+  "description": "**snippet.** — is a minimalistic web-application for your sharing code snippets around network. If you are a software engineer and you like sharing your thoughts through social networks, then **snippet.** is your choice. Write your code, click post... boom! You've just shared your first code snippet! You can share, upvote, commet code snippets written by another users. **snippet.** — is a place for sharing, motivation and collaboration. Join right now!",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/midicable/snippet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/midicable/snippet/issues"
+  },
+  "homepage": "https://github.com/midicable/snippet#readme",
+  "dependencies": {
+    "axios": "^1.5.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.16.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.1.4",
+    "@testing-library/react": "^14.0.0",
+    "@types/axios": "^0.14.0",
+    "@types/react": "^18.2.28",
+    "@types/react-dom": "^18.2.13",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
+    "@vitejs/plugin-react": "^4.1.0",
+    "eslint": "^8.51.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.0.3",
+    "sass": "^1.69.3",
+    "sass-loader": "^13.3.2",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.11",
+    "vitest": "^0.34.6"
+  }
+}
