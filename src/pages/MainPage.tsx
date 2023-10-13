@@ -1,5 +1,13 @@
+import Feed from '../components/Feed'
+import Sidebar from '../components/Sidebar'
+
 const MainPage = () => {
-  return <h1>Main</h1>
+  return (
+    <>
+      <Sidebar />
+      <Feed />
+    </>
+  )
 }
 
 export default MainPage
