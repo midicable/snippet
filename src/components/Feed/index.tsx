@@ -1,5 +1,3 @@
-import './feed.scss'
-
 const Feed = () => {
   return (
     <main className="col-span-5 min-h-screen border border-solid border-gray-100">

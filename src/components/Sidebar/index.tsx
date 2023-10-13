@@ -1,7 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { HomeIcon, BellIcon, UserIcon } from '@heroicons/react/24/outline'
 import SidebarLink from './SidebarLink'
-import './sidebar.scss'
 
 const Sidebar = () => {
   return (
