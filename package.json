@@ -4,7 +4,10 @@
   "description": "**snippet.** — is a minimalistic web-application for your sharing code snippets around network. If you are a software engineer and you like sharing your thoughts through social networks, then **snippet.** is your choice. Write your code, click post... boom! You've just shared your first code snippet! You can share, upvote, commet code snippets written by another users. **snippet.** — is a place for sharing, motivation and collaboration. Join right now!",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
