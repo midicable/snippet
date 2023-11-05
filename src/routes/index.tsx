@@ -1,11 +1,15 @@
-import { createBrowserRouter } from 'react-router-dom'
+import { createBrowserRouter, Navigate } from 'react-router-dom'
 import MainPage from '../pages/MainPage'
 import ProfilePage from '../pages/ProfilePage'
-import BookmarksPage from '../pages/BookmarksPage'
+import NotificationsPage from '../pages/NotificationsPage'
 
 const router = createBrowserRouter([
   {
     path: '/',
+    element: <Navigate to="/home" />,
+  },
+  {
+    path: '/home',
     element: <MainPage />,
   },
   {
@@ -13,8 +17,8 @@ const router = createBrowserRouter([
     element: <ProfilePage />,
   },
   {
-    path: '/bookmarks',
-    element: <BookmarksPage />,
+    path: '/notifications',
+    element: <NotificationsPage />,
   },
 ])
 

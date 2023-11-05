@@ -1,7 +1,7 @@
 import Sidebar from '../components/Sidebar'
 import Feed from '../components/Feed'
 
-const ProfilePage = () => {
+const NotificationsPage = () => {
   return (
     <>
       <Sidebar />
@@ -10,4 +10,4 @@ const ProfilePage = () => {
   )
 }
 
-export default ProfilePage
+export default NotificationsPage
