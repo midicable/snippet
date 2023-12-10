@@ -9,8 +9,6 @@
 3. React ⚛️
 4. ESLint ✅
 5. Prettier 🎨
-6. Axios 🌐
-7. Vitest & Testing library ❌
 
 ## Available scripts
 
