@@ -1,0 +1,53 @@
+.snippet {
+  position: relative;
+  display: block;
+  border-bottom: 1px solid rgba($color: #000000, $alpha: .05);
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: .05);
+    padding: 7px;
+  }
+
+  &__meta {
+    display: flex;
+    gap: 5px;
+    font-size: 0.9rem;
+    color: #536471;
+  }
+
+  &__id {
+    display: none;
+    color: rgb(5, 43, 66);
+
+    &-link {
+      text-decoration: none;
+      color: rgb(5, 43, 66);
+      transition: .2s ease-in-out;
+
+      &:hover {
+        color: rgb(51 119 255);
+      }
+    }
+  }
+
+  &__fragment {
+    display: none;
+  }
+
+  &__author {
+    display: block;
+  }
+
+  &__controls {
+    display: flex;
+    gap: 9px;
+    height: 100%;
+  }
+
+  &__content {
+    width: 100%;
+  }
+}

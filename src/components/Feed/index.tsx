@@ -1,8 +1,36 @@
+import { ClipLoader } from 'react-spinners'
+import { useGetPostsQuery } from '../../api/posts/posts.api'
+import { Post } from '../../models'
+import Snippet from '../Snippet'
+
 const Feed = () => {
+  const { data: posts, isLoading, error } = useGetPostsQuery()
+
   return (
-    <main className="col-span-5 min-h-screen border border-solid border-gray-100">
-      <h1>Feed will be placed here</h1>
-    </main>
+    <>
+      {error && <h1>error</h1>}
+      <div className="relative min-h-[100vh-245px]">
+        {posts
+          ? posts.map(({ id, author, language, data, createdAt }: Post) => (
+              <Snippet
+                key={id}
+                author={author}
+                language={language}
+                data={data}
+                createdAt={createdAt}
+              />
+            ))
+          : null}
+        {isLoading && (
+          <ClipLoader
+            cssOverride={{
+              position: 'absolute',
+              left: '48%',
+            }}
+          />
+        )}
+      </div>
+    </>
   )
 }
 

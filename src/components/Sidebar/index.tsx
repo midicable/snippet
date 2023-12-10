@@ -7,8 +7,8 @@ const Sidebar = () => {
   const { pathname } = useLocation()
 
   return (
-    <aside className="col-span-2 flex flex-row justify-end">
-      <div className="p-[10px]">
+    <aside className="flex flex-row justify-end">
+      <div className="w-[275px] px-[8px] fixed top-0">
         <h1 className="font-chakra text-4xl px-4 mb-[20px]">snippet.</h1>
         <nav className="flex flex-col gap-[5px]">
           <SidebarLink

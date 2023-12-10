@@ -1,0 +1,18 @@
+{
+  "posts": [
+    {
+      "author": "midicable",
+      "language": "csharp",
+      "data": "Dictionary<string, string> heroesAbilities = new Dictionary<string, string>\n{\n    { \"Flash\", \"Super Speed\" },\n    { \"Green Lantern\", \"Power Ring\" },\n    { \"Aquaman\", \"Atlantean Strength\" }\n};\n\n// Inverting the dictionary using LINQ\nvar inverted = heroesAbilities.ToDictionary(x => x.Value, x => x.Key);\n\n// Inverting the dictionary using a foreach loop\nDictionary<string, string> inverted2 = new Dictionary<string, string>();\nforeach (var item in heroesAbilities)\n{\n    inverted2[item.Value] = item.Key;\n}",
+      "createdAt": 1702234397350,
+      "id": 1
+    },
+    {
+      "author": "midicable",
+      "language": "mysql",
+      "data": "SELECT * FROM Student\nWHERE age > 18",
+      "createdAt": 1702235078834,
+      "id": 2
+    }
+  ]
+}

@@ -1,13 +1,7 @@
-import Sidebar from '../components/Sidebar'
-import Feed from '../components/Feed'
+import Layout from '../components/Layout'
 
 const ProfilePage = () => {
-  return (
-    <>
-      <Sidebar />
-      <Feed />
-    </>
-  )
+  return <Layout />
 }
 
 export default ProfilePage

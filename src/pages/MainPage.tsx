@@ -1,12 +1,13 @@
+import Editor from '../components/Editor'
 import Feed from '../components/Feed'
-import Sidebar from '../components/Sidebar'
+import Layout from '../components/Layout'
 
 const MainPage = () => {
   return (
-    <>
-      <Sidebar />
+    <Layout>
+      <Editor />
       <Feed />
-    </>
+    </Layout>
   )
 }
 
